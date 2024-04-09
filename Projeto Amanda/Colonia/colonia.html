@@ -1,0 +1,138 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>Colônia</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="./imagens/icon2.png" type="image/png">
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+	<section id="cabecalho">
+		<div>
+			<h1><strong>Colonia</strong> del Sacramento</h1>
+			<p>Amanda De Quadros Nunes.</p>
+		</div>
+	</section>
+
+	<section class="principal style1">
+		<div class="bloco">
+			<div class="linha espaco">
+				<div class="col-6">
+					<header class="titulo">
+						<h2>Colonia
+							del
+							Sacramento</h2>
+					</header>
+					<p>É uma cidade no sudoeste do Uruguai, do lado oposto do Río de La Plata de Buenos Aires. É conhecida pelo
+						Barrio Histórico calcetado e repleto de edifícios da época em que era uma colonização portuguesa. Acima do
+						bairro histórico, encontra-se o farol Colonia del Sacramento, do século XIX, que oferece vistas
+						arrebatadoras para o rio.</p>
+				</div>
+				<div class="col-6">
+					<span class="imagem"><img src="imagens/colonia.jpg" alt="Letreiro Colonia" /></span>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="principal style2">
+		<div class="bloco">
+			<div class="linha espaco">
+				<div class="col-6">
+					<span class="imagem"><img src="imagens/colonia1.jpg" alt="O Farol" /></span>
+				</div>
+				<div class="col-6">
+					<header class="titulo">
+						<h2>O Farol</h2>
+					</header>
+					<p>O farol é um dos pontos turísticos mais fotografados de Colonia, a composição do cenário com as ruínas do
+						Convento San Francisco onde foi erguido é mesmo linda! Mas dá para adicionar uma dose de aventura e subir os
+						muitos degraus estreitos e em forma de caracol para ter uma vista impagável da cidade.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="principal style1">
+		<div class="bloco">
+			<div class="linha espaco">
+				<div class="col-6">
+					<header class="titulo">
+						<h2>Pôr do sol no Muelle Viejo</h2>
+					</header>
+					<p>Há muita poesia no fim de tarde uruguaio e em Colonia dá para dizer que os deuses capricharam na magia e
+						beleza. Tem vários lugares para curtir o por do sol, mas o Muelle Viejo com sua ponte de madeira, barcos
+						ancorados e banquinhos estão aí para terminar de se encantar com esse lugar especial. </p>
+				</div>
+				<div class="col-6">
+					<span class="imagem"><img src="imagens/colonia2.jpg" alt="Pôr do sol no Muelle Viejo" /></span>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="principal style2">
+		<div class="bloco">
+			<div class="linha espaco">
+				<div class="col-4">
+					<span class="imagem"><img src="imagens/colonia3.jpg" alt="Bairro Histórico" /></span>
+					<h3>Bairro Histórico</h3>
+					<p>Vale a pena gastar alguns dias de sua estadia percorrendo as ruas históricas desta cidade construída por
+						colonos, indígenas, portugueses e espanhóis. Restaurantes com os mais variados sabores são uma das
+						vantagens, assim como as várias lojas de roupas, artesanato local e lembrancinhas. A cena cultural também é
+						uma das atrações, com diversos museus na área.</p>
+				</div>
+				<div class="col-4">
+					<span class="imagem"><img src="imagens/colonia4.jpg" alt="Ruínas do Convento de San Francisco" /></span>
+					<h3>Ruínas do Convento de San Francisco</h3>
+					<p>Essas ruínas datam da primeira edificação feita pelos padres franciscanos, que representavam o poder
+						colonial em nome dos interesses portugueses e da Igreja. O convento foi erguido em 1683, tendo sido
+						destruído por um raio em 1823. Hoje, o espaço conta os resquícios históricos, além de uma espécie de museu
+						com obras de artes do período colonial.</p>
+				</div>
+				<div class="col-4">
+					<span class="imagem"><img src="imagens/colonia5.jpg" alt="Basílica do Santíssimo Sacramento" /></span>
+					<h3>Basílica do Santíssimo Sacramento</h3>
+					<p>Esta igreja, construída em 1680, passou por processos de restauração e reconstrução ao longo dos séculos,
+						sendo o prédio atual de 1810. É um dos marcos considerados Patrimônio Mundial pela Unesco.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section>
+		<div id="map"></div>
+	</section>
+
+	<section id="rodape">
+		<p>&copy; 2022 Colonia. Todos os direitos reservados. Criado por <a href="#">projetoviagens.com</a>
+		</p>
+	</section>
+
+
+	<script>
+		feather.replace()
+
+		function initMap() {
+				const uluru = { lat: -34.461135, lng: -57.835342 };
+				const map = new google.maps.Map(document.getElementById("map"), {
+						zoom: 12,
+						center: uluru,
+				});
+				const marker = new google.maps.Marker({
+						position: uluru,
+						map: map,
+				});
+		}
+		
+		window.initMap = initMap;
+
+	</script>
+
+	<script src="https://maps.googleapis.com/maps/api/js?callback=initMap&v=weekly" defer></script>
+</body>
+
+</html>

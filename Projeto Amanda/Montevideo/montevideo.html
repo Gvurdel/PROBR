@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>Montevideo</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="./imagens/icon2.png" type="image/png">
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+	<div>
+		<div id="principal">
+			<div class="interno">
+				<header id="cabecalho">
+					<div class="logo"><strong>Montevideo</strong> Amanda</div>
+				</header>
+				<section id="bloco-principal">
+					<div>
+						<header>
+							<h1>Montevideo</h1>
+						</header>
+						<p>Montevideo é a capital e a cidade mais importante e influente do Uruguai, sede do MERCOSUL. Hospeda um
+							dos portos mais importantes da região. Esta metrópole possui um bairro antigo com forte influência
+							espanhola, com foco principal na Plaza de la Independencia (praça da Independência) e novas áreas, como
+							Carrasco, Punta Carretas, Pocitos e Malvin. Seja testemunha da cultura distinta ou de uma das mais
+							importantes cidades fluviais. </p>
+					</div>
+					<span class="imagem">
+						<img src="imagens/montevideo.jpg" alt="Montevideo" />
+					</span>
+				</section>
+
+				<section>
+					<header class="titulo">
+						<h2>Pontos turísticos e eventos</h2>
+					</header>
+					<div class="posts">
+						<article>
+							<div class="imagem"><img src="imagens/montevideo1.jpeg" alt="Museu Andes 1972 - Crash Memorial" /></div>
+							<h3>Museu Andes 1972 - Crash Memorial</h3>
+							<p>Visite o Museu dos Andes, em Montevideo, para descobrir a história de um acidente de avião em 1972 nas
+								montanhas altas. Você verá itens pessoais de alguns dos uruguaios que morreram no acidente, assim como
+								dos sobreviventes, com informações e vídeos do museu tanto em inglês quanto em espanhol. Reservar
+								previamente os ingressos para o Museu dos Andes é uma estratégia de economia de tempo que permite a você
+								cuidar do planejamento com antecedência.</p>
+						</article>
+						<article>
+							<div class="imagem"><img src="imagens/montevideo2.jpeg" alt="Puerta de la Ciudadela" /></div>
+							<h3>Puerta de la Ciudadela</h3>
+							<p>La Puera de la Ciudadela é um ponto turístico histórico como um porta da cidade. Tem esse lado
+								emblemático e significativo como identidade de Montevideo, assim, tem seu valor para a História e é como
+								entrar na cidade velha, caminhar na zona turística nas imediações da Praça da Independência e respirar a
+								tradição. É um passeio essencial que vale uma boa fotografia, ao lado da porta.</p>
+						</article>
+						<article>
+							<div class="imagem"><img src="imagens/montevideo3.jpeg" alt="Tour em Montevideo" /></div>
+							<h3>Tour em Montevideo</h3>
+							<p>O passeio é totalmente personalizável, você pode dizer seus interesses e faremos adaptações para
+								atender às suas necessidades e interesses. É o tour mais abrangente que você encontrará e que recebeu o
+								Distintivo de Excelência! Esqueça ter que esperar por outros convidados, este é feito apenas para você!
+							</p>
+						</article>
+						<article>
+							<div class="imagem"><img src="imagens/montevideo4.jpeg" alt="Vista Montevideo" /></div>
+							<h3>Quando ir a Montevideo – Clima
+							</h3>
+							<p>Tanto Montevideo, como todo o Uruguai tem as estações bem definidas, mas as chuvas são imprevisíveis.
+								No inverno faz um frio úmido, com temperatura média de 11ºC, e mínima de 5ºC. No verão a temperatura
+								média é de 21ºC. Porém, no verão se torna mais agradável visitar o país e é possível até aproveitar uma
+								das praias de água doce do Rio da Prata. Do início de fevereiro até a metade de março rola o carnaval
+								uruguaio, considerado o mais longo do mundo, com 40 dias de duração.</p>
+						</article>
+					</div>
+				</section>
+
+				<section>
+					<div id="map"></div>
+				</section>
+
+				<script>
+					feather.replace()
+
+					function initMap() {
+						const uluru = { lat: -34.907368, lng: -56.193358 };
+						const map = new google.maps.Map(document.getElementById("map"), {
+							zoom: 12,
+							center: uluru,
+						});
+						const marker = new google.maps.Marker({
+							position: uluru,
+							map: map,
+						});
+					}
+
+					window.initMap = initMap;
+
+				</script>
+				<script src="https://maps.googleapis.com/maps/api/js?callback=initMap&v=weekly" defer></script>
+
+				<section id="rodape">
+					<p>&copy; 2022 Montevideo. Todos os direitos reservados. Criado por <a href="">projetoviagens.com</a></p>
+				</section>
+
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

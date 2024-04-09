@@ -1,0 +1,80 @@
+p{
+    color: #000000;
+   text-align:  ;
+  text-shadow: 1px 1px rgb(83, 82, 82);
+
+}
+#paragrafos{
+    background-color: blueviolet;
+    background-image: url(../imagens/fundo.jpg);
+    background-repeat: repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+#cm{
+
+    background-color: blueviolet;
+    width: 2cm;
+    height: 2cm;
+    
+}
+
+#mm{
+
+    background-color: blue;
+    width: 3mm;
+    height: 3mm;
+
+}
+
+#in{
+    
+    background-color: red;
+width: 3in;
+height: 3in;
+}
+
+
+#px{
+    
+    background-color: black;
+width: 30px;
+height: 30px;
+}
+
+#pt{
+    
+    background-color: rgb(82, 214, 30);
+width: 30pt;
+height: 30pt;
+}
+
+#pc{
+    
+    background-color: rgb(173, 36, 127);
+width: 30pc;
+height: 30pc;
+}
+
+
+
+#cecilia{
+    color:rgb(255,100,255);
+
+    background-image
+    
+}
+.texto_verde{
+    color:green;
+}
+
+.container{
+
+font-size: 20px;
+}
+
+.inside{
+    font-size: 1em;
+}

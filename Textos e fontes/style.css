@@ -1,0 +1,27 @@
+p{
+
+    font-family:;
+    font-style:;
+    font-size: ;
+    font-weight: ;
+    font-variant: ; 
+
+color: rgb(0, 0, 0);
+
+text-align: justify;
+text-transform: ;
+text-indent: ;
+text-decoration:;
+letter-spacing: ;
+text-shadow: ;
+line-height: ;
+
+}
+
+.cor_de_fundo{
+
+    background-color: whitesmoke;
+    background-repeat: no-repeat;
+    background-size:cover ;
+    background-attachment: fixed;
+}
